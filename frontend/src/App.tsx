@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import DashboardPage from './pages/DashboardPage';
 import  MonitoringPage from './pages/MonitoringPage';
+import  MapViewPage from './pages/MapViewPage';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
           <Route path="/" element={<DashboardPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/monitoring" element={<MonitoringPage />} />
+          <Route path="/mapview" element={<MapViewPage />} />
+
           {/* Other routes will be added in their respective feature branches */}
         </Routes>
       </Layout>
